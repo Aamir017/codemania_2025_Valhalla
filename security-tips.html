@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Tips - PhishGuard</title>
+    <link rel="stylesheet" href="css/combined.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="pics/phish_logo-removebg-preview.png" alt="PhishGuard Logo">
+                <h1>PhishGuard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="security-tips.html" class="active"><i class="fas fa-shield-alt"></i> Security Tips</a></li>
+                <li><a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                <li><a href="social-share.html"><i class="fas fa-share-alt"></i> Social Share</a></li>
+                
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tips-container">
+        <section class="tips-header">
+            <h1>Phishing Security Tips</h1>
+            <p>Learn how to protect yourself from phishing attacks with these expert security tips.</p>
+            
+            <div class="search-container">
+                <input type="text" id="tip-search" placeholder="Search for security tips...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All Tips</button>
+                <button class="category-btn" data-category="email">Email Safety</button>
+                <button class="category-btn" data-category="web">Web Browsing</button>
+                <button class="category-btn" data-category="account">Account Security</button>
+                <button class="category-btn" data-category="social">Social Media</button>
+                <button class="category-btn" data-category="work">Workplace</button>
+            </div>
+        </section>
+
+        <section class="featured-tip">
+            <div class="tip-of-day">
+                <h2><i class="fas fa-star"></i> Tip of the Day</h2>
+                <div class="tip-content" id="tip-of-day-content">
+                    <!-- Dynamically filled by JavaScript -->
+                </div>
+                <button id="new-featured-tip" class="btn">Show Me Another Tip</button>
+                <a href="quiz.html" class="btn primary-btn" style="margin-left: 10px;">Test Your Knowledge</a>
+            </div>
+        </section>
+
+        <section class="tips-grid" id="tips-grid">
+            <!-- Email Safety Tips -->
+            <div class="tip-card" data-category="email">
+                <div class="tip-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Check Sender Details</h3>
+                <p>Always verify the sender's email address, not just the display name. Hover over or click on the sender's name to reveal the actual email address.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Email Safety</span>
+                    <button class="save-tip-btn" data-tip-id="email-1"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="email">
+                <div class="tip-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <h3>Beware of Urgent Requests</h3>
+                <p>Be suspicious of emails that create a sense of urgency or threaten negative consequences if you don't take immediate action.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Email Safety</span>
+                    <button class="save-tip-btn" data-tip-id="email-2"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="email">
+                <div class="tip-icon"><i class="fas fa-paperclip"></i></div>
+                <h3>Scrutinize Attachments</h3>
+                <p>Never open attachments from unknown senders. Be especially cautious of compressed files (.zip, .rar) and executable files (.exe, .bat, .scr).</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Email Safety</span>
+                    <button class="save-tip-btn" data-tip-id="email-3"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="email">
+                <div class="tip-icon"><i class="fas fa-spell-check"></i></div>
+                <h3>Grammar and Spelling Errors</h3>
+                <p>Professional organizations typically proofread their communications. Poor grammar, spelling mistakes, and unusual phrasing are often indicators of phishing attempts.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Email Safety</span>
+                    <button class="save-tip-btn" data-tip-id="email-4"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="email">
+                <div class="tip-icon"><i class="fas fa-link"></i></div>
+                <h3>Hover Before You Click</h3>
+                <p>Before clicking any link in an email, hover over it to preview the actual URL. If it looks suspicious or different from what you'd expect, don't click.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Email Safety</span>
+                    <button class="save-tip-btn" data-tip-id="email-5"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <!-- Web Browsing Tips -->
+            <div class="tip-card" data-category="web">
+                <div class="tip-icon"><i class="fas fa-lock"></i></div>
+                <h3>Check for HTTPS</h3>
+                <p>Always verify that websites use HTTPS (look for the padlock icon) before entering any personal information or credentials, especially for financial sites.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Web Browsing</span>
+                    <button class="save-tip-btn" data-tip-id="web-1"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="web">
+                <div class="tip-icon"><i class="fas fa-globe"></i></div>
+                <h3>Verify Website URLs</h3>
+                <p>Check the domain name carefully. Phishers often use lookalike domains with subtle misspellings (like "paypa1.com" instead of "paypal.com").</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Web Browsing</span>
+                    <button class="save-tip-btn" data-tip-id="web-2"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="web">
+                <div class="tip-icon"><i class="fas fa-keyboard"></i></div>
+                <h3>Type URLs Directly</h3>
+                <p>Instead of clicking links in emails, type the website address directly into your browser or use a bookmark you've previously created.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Web Browsing</span>
+                    <button class="save-tip-btn" data-tip-id="web-3"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="web">
+                <div class="tip-icon"><i class="fas fa-download"></i></div>
+                <h3>Be Cautious with Downloads</h3>
+                <p>Only download files from trusted sources. Be especially wary of "free" software that seems too good to be true.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Web Browsing</span>
+                    <button class="save-tip-btn" data-tip-id="web-4"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="web">
+                <div class="tip-icon"><i class="fas fa-ad"></i></div>
+                <h3>Watch Out for Deceptive Pop-ups</h3>
+                <p>Be skeptical of pop-up windows claiming your computer is infected or that you've won a prize. Never call phone numbers or click buttons in these pop-ups.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Web Browsing</span>
+                    <button class="save-tip-btn" data-tip-id="web-5"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <!-- Account Security Tips -->
+            <div class="tip-card" data-category="account">
+                <div class="tip-icon"><i class="fas fa-key"></i></div>
+                <h3>Use Strong, Unique Passwords</h3>
+                <p>Create complex, unique passwords for each of your accounts. Consider using a password manager to generate and store them securely.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Account Security</span>
+                    <button class="save-tip-btn" data-tip-id="account-1"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="account">
+                <div class="tip-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Enable Two-Factor Authentication</h3>
+                <p>Whenever possible, set up two-factor authentication (2FA) for your accounts. This adds an extra layer of security beyond just your password.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Account Security</span>
+                    <button class="save-tip-btn" data-tip-id="account-2"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="account">
+                <div class="tip-icon"><i class="fas fa-credit-card"></i></div>
+                <h3>Regular Financial Monitoring</h3>
+                <p>Check your bank and credit card statements regularly for unauthorized transactions. Set up alerts for account activities when available.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Account Security</span>
+                    <button class="save-tip-btn" data-tip-id="account-3"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="account">
+                <div class="tip-icon"><i class="fas fa-question-circle"></i></div>
+                <h3>Use Strong Security Questions</h3>
+                <p>Choose security questions with answers that aren't easily found on social media or through a simple search about you.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Account Security</span>
+                    <button class="save-tip-btn" data-tip-id="account-4"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <!-- Social Media Tips -->
+            <div class="tip-card" data-category="social">
+                <div class="tip-icon"><i class="fas fa-user-friends"></i></div>
+                <h3>Verify Friend Requests</h3>
+                <p>Be cautious of duplicate friend requests from people already in your network. Contact them through another method to confirm before accepting.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Social Media</span>
+                    <button class="save-tip-btn" data-tip-id="social-1"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="social">
+                <div class="tip-icon"><i class="fas fa-lock"></i></div>
+                <h3>Review Privacy Settings</h3>
+                <p>Regularly check and update your privacy settings on social media platforms to control what information is publicly visible.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Social Media</span>
+                    <button class="save-tip-btn" data-tip-id="social-2"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="social">
+                <div class="tip-icon"><i class="fas fa-gift"></i></div>
+                <h3>Beware of "Too Good to Be True" Offers</h3>
+                <p>Be skeptical of contests, giveaways, or offers that seem overly generous or require you to provide personal information.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Social Media</span>
+                    <button class="save-tip-btn" data-tip-id="social-3"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="social">
+                <div class="tip-icon"><i class="fas fa-share"></i></div>
+                <h3>Think Before You Share</h3>
+                <p>Be careful about what personal information you share on social media. Details like your birthdate, home address, or vacation plans can be exploited by attackers.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Social Media</span>
+                    <button class="save-tip-btn" data-tip-id="social-4"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <!-- Workplace Tips -->
+            <div class="tip-card" data-category="work">
+                <div class="tip-icon"><i class="fas fa-briefcase"></i></div>
+                <h3>Verify Unusual Requests</h3>
+                <p>If you receive an unusual request from a colleague or manager, especially involving money transfers or sensitive information, verify through another communication channel.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Workplace</span>
+                    <button class="save-tip-btn" data-tip-id="work-1"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="work">
+                <div class="tip-icon"><i class="fas fa-laptop"></i></div>
+                <h3>Lock Your Computer</h3>
+                <p>Always lock your computer when stepping away from your desk, even if it's just for a moment (Windows key + L or Command + Control + Q).</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Workplace</span>
+                    <button class="save-tip-btn" data-tip-id="work-2"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="work">
+                <div class="tip-icon"><i class="fas fa-file-alt"></i></div>
+                <h3>Document Suspicious Activity</h3>
+                <p>Report suspicious emails or security incidents to your IT department immediately. Take screenshots or save copies as evidence.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Workplace</span>
+                    <button class="save-tip-btn" data-tip-id="work-3"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+
+            <div class="tip-card" data-category="work">
+                <div class="tip-icon"><i class="fas fa-wifi"></i></div>
+                <h3>Be Cautious on Public Wi-Fi</h3>
+                <p>Avoid accessing sensitive work information when connected to public Wi-Fi networks. Use a VPN when working remotely.</p>
+                <div class="tip-footer">
+                    <span class="tip-category">Workplace</span>
+                    <button class="save-tip-btn" data-tip-id="work-4"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="saved-tips" id="saved-tips-section">
+            <h2>Your Saved Tips</h2>
+            <div id="saved-tips-container">
+                <p class="no-saved-tips">You haven't saved any tips yet. Click the bookmark icon on any tip to save it for later.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="pics/phish_logo-removebg-preview.png" alt="PhishGuard Logo">
+                <h2>PhishGuard</h2>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> support@phishguard.com</p>
+                <p><i class="fas fa-phone"></i>+91 9876543210</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;PhishGuard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/security-tips.js"></script>
+    <script src="js/direct-nav.js"></script>
+</body>
+</html> 

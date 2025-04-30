@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard - Dashboard</title>
+    <link rel="stylesheet" href="css/combined.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="pics/phish_logo-removebg-preview.png" alt="PhishGuard Logo">
+                <h1>PhishGuard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html" class="active"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="security-tips.html"><i class="fas fa-shield-alt"></i> Security Tips</a></li>
+                <li><a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                <li><a href="social-share.html"><i class="fas fa-share-alt"></i> Social Share</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard" class="section active">
+            <h2>Security Dashboard</h2>
+            <p>Your phishing detection statistics and security overview.</p>
+            
+            <div class="dashboard-container">
+                <div class="dashboard-grid">
+                    <div class="dashboard-card security-score">
+                        <h3>Security Score</h3>
+                        <div class="score-circle">
+                            <span id="security-score-value">0</span>
+                            <span class="score-label">/ 100</span>
+                        </div>
+                        <p>Based on your quiz results and security activities</p>
+                    </div>
+                    
+                    <div class="dashboard-card scan-stats">
+                        <h3>URL Scan Statistics</h3>
+                        <div class="chart-container">
+                            <canvas id="scan-chart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card recent-activity">
+                        <h3>Recent Activity</h3>
+                        <ul id="recent-activity-list">
+                            <li class="activity-item"><span class="activity-time">Just now</span> Dashboard viewed</li>
+                            <!-- Activity items will be added here dynamically -->
+                        </ul>
+                    </div>
+                    
+                    <div class="dashboard-card security-tips">
+                        <h3>Security Tip of the Day</h3>
+                        <div class="tip-content">
+                            <i class="fas fa-lightbulb tip-icon"></i>
+                            <p id="security-tip">Always check the sender's email address for suspicious domains before clicking on links.</p>
+                        </div>
+                        <button id="new-tip-btn">Show Another Tip</button>
+                    </div>
+                </div>
+                
+                <div class="dashboard-table-container">
+                    <h3>Recent Scans</h3>
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>URL</th>
+                                <th>Risk Level</th>
+                                <th>Scan Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recent-scans-table">
+                            <!-- Table rows will be added here dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="pics/phish_logo-removebg-preview.png" alt="PhishGuard Logo">
+                <h2>PhishGuard</h2>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> support@phishguard.com</p>
+                <p><i class="fas fa-phone"></i>+91 9876543210</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;PhishGuard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/direct-nav.js"></script>
+</body>
+</html> 

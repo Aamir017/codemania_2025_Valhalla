@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard - Phishing Detection & Awareness</title>
+    <link rel="stylesheet" href="css/combined.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="pics/phish_logo-removebg-preview.png" alt="PhishGuard Logo">
+                <h1>PhishGuard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="security-tips.html"><i class="fas fa-shield-alt"></i> Security Tips</a></li>
+                <li><a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                <li><a href="social-share.html"><i class="fas fa-share-alt"></i> Social Share</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Stay Safe from Phishing Attacks</h1>
+                <p>PhishGuard helps you identify and avoid phishing attempts with our powerful tools and resources.</p>
+                <div class="hero-buttons">
+                    <a href="#scanner" class="btn primary-btn">Scan a URL</a>
+                    <a href="security-tips.html" class="btn secondary-btn">Learn Security Tips</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="pics/phishguard_logo-removebg-preview.png" alt="Phishing Protection">
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <h2>Protect Yourself Online</h2>
+            <p class="section-description">PhishGuard offers multiple ways to improve your online security</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>URL Scanner</h3>
+                    <p>Check if a website is potentially dangerous or a phishing attempt before visiting it.</p>
+                    <a href="#scanner" class="feature-link">Try Now</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Tips</h3>
+                    <p>Learn how to protect yourself from phishing attacks with expert security tips.</p>
+                    <a href="security-tips.html" class="feature-link">View Tips</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Dashboard</h3>
+                    <p>Track your security score and view your recent scan history.</p>
+                    <a href="dashboard.html" class="feature-link">View Dashboard</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Interactive Quiz</h3>
+                    <p>Test your knowledge about phishing and improve your security awareness.</p>
+                    <a href="quiz.html" class="feature-link">Take Quiz</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="scanner" class="scanner-section">
+            <h2>URL Scanner</h2>
+            <p>Check if a website is potentially dangerous or a phishing attempt.</p>
+            
+            <div class="scanner-container">
+                <div class="url-input">
+                    <input type="text" id="url-to-scan" placeholder="Enter a URL to scan (e.g., https://example.com)">
+                    <button id="scan-btn">Scan URL</button>
+                </div>
+                
+                <div class="api-status">
+                    <span id="api-status-indicator"><i class="fas fa-circle-notch"></i> API Status: Checking...</span>
+                </div>
+                
+                <div class="scan-results" id="scan-results">
+                    <!-- Results will appear here -->
+                </div>
+                
+                <div class="recent-scans">
+                    <h3>Recent Scans</h3>
+                    <ul id="recent-scans-list">
+                        <!-- Recent scans will appear here -->
+                    </ul>
+                    <a href="dashboard.html" class="view-all-link">View all scan history <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="security-tips-preview" class="tips-preview-section">
+            <h2>Security Tips</h2>
+            <p>Learn how to protect yourself from phishing attacks with these expert security tips.</p>
+            
+            <div class="tip-of-day">
+                <h3><i class="fas fa-star"></i> Tip of the Day</h3>
+                <div class="tip-content" id="home-tip-content">
+                    <!-- Dynamically filled by JavaScript -->
+                </div>
+                <a href="security-tips.html" class="btn secondary-btn">View All Tips</a>
+            </div>
+        </section>
+
+        <section id="cta" class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to improve your security?</h2>
+                <p>Take our interactive quiz to test your knowledge and learn how to stay safe online.</p>
+                <a href="quiz.html" class="btn primary-btn">Take the Quiz</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="pics/phish_logo-removebg-preview.png" alt="PhishGuard Logo">
+                <h2>PhishGuard</h2>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> support@phishguard.com</p>
+                <p><i class="fas fa-phone"></i>+91 9876543210</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;  PhishGuard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/scanner.js"></script>
+    <script src="js/index-tips.js"></script>
+    <script src="js/direct-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard - Security Quiz</title>
+    <link rel="stylesheet" href="css/combined.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="pics/phish_logo-removebg-preview.png" alt="PhishGuard Logo">
+                <h1>PhishGuard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="security-tips.html"><i class="fas fa-shield-alt"></i> Security Tips</a></li>
+                <li><a href="quiz.html" class="active"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                <li><a href="social-share.html"><i class="fas fa-share-alt"></i> Social Share</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiz-intro" class="quiz-intro">
+            <div class="container">
+                <h1>Test Your Phishing Awareness</h1>
+                <p>Challenge yourself with our interactive quiz to see how well you can identify phishing attempts. Improve your security awareness and protect yourself online.</p>
+                
+                <div class="quiz-features">
+                    <div class="quiz-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>10 Questions</h3>
+                        <p>Test your knowledge with real-world scenarios</p>
+                    </div>
+                    <div class="quiz-feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Track Progress</h3>
+                        <p>See your improvement over time</p>
+                    </div>
+                    <div class="quiz-feature">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Learn</h3>
+                        <p>Get explanations for every answer</p>
+                    </div>
+                </div>
+                
+                <button id="start-quiz-btn" class="btn primary-btn">Start Quiz</button>
+            </div>
+        </section>
+
+        <section id="quiz-container" class="quiz-container" style="display: none;">
+            <div class="quiz-header">
+                <h2>Phishing Security Quiz</h2>
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <span id="quiz-progress-text">Question 1 of 10</span>
+                </div>
+            </div>
+            
+            <div class="quiz-content">
+                <div id="quiz-question" class="quiz-question">
+                    <!-- Question will be inserted here -->
+                </div>
+                
+                <div id="quiz-options" class="quiz-options">
+                    <!-- Options will be inserted here -->
+                </div>
+                
+                <div id="quiz-feedback" class="quiz-feedback">
+                    <!-- Feedback will appear here -->
+                </div>
+                
+                <div class="quiz-controls">
+                    <button id="next-btn" class="btn primary-btn" disabled>Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-results" class="quiz-results" style="display: none;">
+            <h2>Your Results</h2>
+            
+            <div class="quiz-score">
+                <div class="score-circle">
+                    <span id="score-percent">0%</span>
+                </div>
+                <p>You got <span id="correct-answers">0</span> out of <span id="total-questions">10</span> questions right!</p>
+            </div>
+            
+            <div class="quiz-summary">
+                <h3>What your score means:</h3>
+                <div id="score-meaning">
+                    <!-- Will be filled based on score -->
+                </div>
+            </div>
+            
+            <div class="quiz-actions">
+                <button id="retry-quiz-btn" class="btn primary-btn">Try Again</button>
+                <a href="security-tips.html" class="btn secondary-btn">Learn More Security Tips</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="pics/phish_logo-removebg-preview.png" alt="PhishGuard Logo">
+                <h2>PhishGuard</h2>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> support@phishguard.com</p>
+                <p><i class="fas fa-phone"></i>+91 9876543210</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; PhishGuard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/direct-nav.js"></script>
+</body>
+</html> 
