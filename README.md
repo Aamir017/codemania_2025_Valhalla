@@ -79,3 +79,15 @@ The URL scanner uses a two-tier approach to evaluate the risk level of a URL:
 ## License
 
 This project is open source and available under the [MIT License](LICENSE). # codemania_2025_Valhalla
+
+## Demo Images
+
+![Image](https://github.com/user-attachments/assets/eaf2078c-d640-4c0e-99e5-002f54d7f7c5)
+
+![Image](https://github.com/user-attachments/assets/8cfb1723-23ed-4ffd-9f6f-1e6d656356c1)
+
+![Image](https://github.com/user-attachments/assets/a9395b6d-48da-429e-afcb-aebe302d35c8)
+
+![Image](https://github.com/user-attachments/assets/a0dcbe4f-4200-496a-a468-7553c687515e)
+
+![Image](https://github.com/user-attachments/assets/9328b112-0f75-425a-9cf1-af69056e6f6a)
